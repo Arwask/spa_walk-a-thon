@@ -32,7 +32,7 @@ var donation = function(oldDonation)
 	donorObj.addDonor = function(donorInfo)
 	{
 		donorList.donors.push(donorInfo);
-		console.log(donorList)
+		console.log(donorList);
 	}
 oldDonation.donorObj = donorObj;
 return oldDonation;

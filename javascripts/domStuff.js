@@ -8,7 +8,7 @@ let amt = document.getElementById('amount');
 
 domStuff.getInformation = function()
 {
-	console.log("in getInformation");
+	// console.log("in getInformation");
 	let donorInfo = {};
 	donorInfo.firstName = fname.value;
 	donorInfo.lastName = lname.value;
