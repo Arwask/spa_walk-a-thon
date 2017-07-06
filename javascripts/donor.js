@@ -24,6 +24,10 @@ var donation = function(oldDonation)
 		"pledge" : 7
 	}]
 	}
+	for(let i=0; i<donorList.donors.length; i++)
+	{
+		donation.domStuff.putOnDom(donorList.donors[i])
+	}
 	donorObj.accessDonorList = function()
 	{
 		return donorList.donors;
@@ -32,6 +36,7 @@ var donation = function(oldDonation)
 	donorObj.addDonor = function(donorInfo)
 	{
 		donorList.donors.push(donorInfo);
+		donation.domStuff.putOnDom(donorInfo);
 		console.log(donorList);
 	}
 oldDonation.donorObj = donorObj;
